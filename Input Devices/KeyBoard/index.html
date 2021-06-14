@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <h1> Type key from Keyboard </h1>
+    <h2> Typed key value = <span id="value"></span></h2>
+    <h2> Typed key Ascii Code= <span id="ascii"></span></h2>
+    
+    <script>
+      let val=document.getElementById("value");
+      let asc=document.getElementById("ascii");
+      document.addEventListener("keypress", (event)=>{
+        val.innerHTML=event.code;
+        asc.innerHTML=event.charCode || event.keyCode;
+      });
+    </script>
+  </body>
+</html>
