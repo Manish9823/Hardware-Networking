@@ -1,0 +1,20 @@
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <h3>Here your Pointing Co-ordinates, </h3>
+    <h3>X=<span id="x">0</span></h3>
+    <h3>Y=<span id="y">0</span></h3>
+    <script>
+      let x=document.getElementById("x");
+      let y=document.getElementById("y");
+      
+      document.addEventListener("mousemove", (event) => {
+      x.innerHTML=event.x;
+      y.innerHTML=event.y;
+      });
+      
+    </script>
+  </body>
+</html>
